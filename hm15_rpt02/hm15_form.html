@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm15 : CSS3 animation</title>
+		<style>
+			input[type=text] {/* text 창에만 적용 */
+				color: black;
+			}
+			input:hover, textarea:hover {/* 마우스 올라 올 때 */
+				background: rgb(187, 221, 252);
+			}
+			input[type=text]:focus {/* 포커스 받을 때 */
+				font-size:120% ;
+			}
+			label {
+				display: block; /* 새 라인에서 시작 */
+				padding: 10px;
+			}
+			label span {
+				float: left;
+				width: 90px;
+				text-align: right;
+				padding: 10px;
+			}
+
+		</style>
+		<script></script>
+	</head>
+
+	<body>
+		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+		<h3>음악 동호회에 가입하세요!</h3>
+		<hr>
+		<form>
+			<fieldset>
+				<legend>회원정보</legend>
+			<label> <span>이름</span>
+				<input type="text" placeholder="Elvis">
+				<br>
+			</label>
+
+			<label> <span>학번</span>
+				<input type="text" placeholder="12345678">
+			</label>
+			<label> <span>학과</span>
+				<input type="text" placeholder="학과를 입력해주세요">
+			</label>
+			<label> <span>자기소개</span>				
+				<textarea placeholder="메시지를 남겨주세요"> </textarea> 
+			</label>
+			<label> <span></span>
+				<button onclick="window.open('hm15_music.html')">가입하기</button >
+					<input type="reset" value="지우기">
+			</label>
+		
+			</fieldset>
+		</form>
+
+	</body>
+
+</html>
+
