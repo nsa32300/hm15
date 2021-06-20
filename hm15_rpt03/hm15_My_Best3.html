@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm15 : iframe - target control</title>
+		<style>
+		</style>
+		<script>
+		function load() {
+		var select = document.getElementById("music");
+		window.location=select.options[select.selectedIndex].value;
+}
+		</script>
+	</head>
+
+	<body>
+		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+		<h4> 내가 좋아하는 것 3가지 </h4>
+		<ul>
+            <hr>
+			<li><img src="media/롤.png"><br>
+				<a href="https://kr.leagueoflegends.com/"target="_blank"> <b>리그 오브 레전드</b> </a><br>
+                <a href="https://www.youtube.com/watch?v=zF5Ddo9JdpY"target="_blank"> 참고 자료(새 탭) </a><br>
+            <hr>
+				<li><img src="media/엘비스.png"><br>
+                <a href="https://www.genie.co.kr/"target="_blank"> <b>음악감상</b> </a><br>
+                <a href="https://www.youtube.com/watch?v=58kjAG91Deo"target="_blank">참고 자료(새 탭)</a><br>
+				MY BEST MUSIC 3 :
+				<select id="music">
+				<option value="https://www.melon.com/song/detail.htm?songId=7903931">Can't help falling in love
+				<option value="https://www.melon.com/song/detail.htm?songId=33359317">Peaches
+				<option value="https://www.melon.com/song/detail.htm?songId=32872978">Dynamite
+				</select>
+				<p>
+				<button onclick="load()">노래정보</button>
+            <hr>
+				<li><img src="media/귀멸의칼날.png"><br>
+                <a href="https://www.netflix.com/kr/"target="_blank"> <b>영화보기</b> </a><br>
+                <a href="https://www.youtube.com/results?search_query=%EC%98%81%ED%99%94%EC%B6%94%EC%B2%9C"target="_blank">참고 자료(새 탭)</a><br>
+            <hr>       
+		</ul>
+
+	</body>
+
+</html>
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm15 : music</title>
+		<style>
+			.main{background-color: aliceblue;
+				  background-image: url('media/음악.png');
+			}
+
+			.title {
+        		   font-size: 90px;
+				   text-align: center;}
+			@keyframes textColorAnimation {
+			0% { color : blue; }
+			30% { color : green;}
+			100% { color : red;}
+			}
+			span {
+				animation-name: textColorAnimation;
+				animation-duration: 20s;
+				animation-iteration-count: infinite;
+				transition : font-size 5s;
+			}
+		</style>
+		<script></script>
+	</head>
+
+	<body class="main">
+	<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+			<div>
+			<h1 class="title"><span>음악 동호회에 오신 것을 환영합니다! </span></h1>
+    		</div>
+			<p
+      id="firstP">
+    </p>
+    <script>
+     var p = document.getElementById("firstP");
+     var text = "축하합니다! 음악 동호회에 가입 되셨습니다!";
+		alert(text);
+    </script>
+	</body>
+
+</html>
+
